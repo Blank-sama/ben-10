@@ -9,15 +9,15 @@ from telegram import *
 from telegram.ext import MessageHandler, Filters
 
 db = mysql.connector.connect(
-    host="localhost",
-    user="PUT YOUR ROOT",
-    passwd="PUT YOUR PASSWORD",
-    database="PUT YOUR DB",
+    host="containers-us-west-43.railway.app",
+    user="root",
+    passwd="5BQJVDA3s3xaamZAXE9W",
+    database="railway",
     autocommit=True)
 mycursor = db.cursor(buffered=True)
 
 logger = logging.getLogger(__name__)
-updater = Updater('PUT YOUR BOT TOKEN', use_context=True)
+updater = Updater('5226426388:AAExT0F5fKwCGFXAcv8x5GCCoFeodKUmFIE', use_context=True)
 
 
 def error(update, context):
